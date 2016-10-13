@@ -11,7 +11,7 @@ $ npm install --save time-controller
 
 ## Usage
 
-Currently no docs available. Please see unit tests of this repo or (https://s-a.github.io/time-controller/lib/index.html)[https://s-a.github.io/time-controller/lib/index.html] to inspect the things in your browser.
+Currently no docs available. Please see unit tests of this repo or [https://s-a.github.io/time-controller/lib/index.html](https://s-a.github.io/time-controller/lib/index.html) to inspect the things in your browser.
 
 ## License
 
