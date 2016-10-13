@@ -10,7 +10,6 @@ return this;
 describe('time-controller', function () {
 
 	it('should execute debounced', function (done) {
-		this.timeout(50);
 		var contextObject = new ContextObject()
 		var debouncedTimeController = new TimeController(function(){
 			assert(true, this.test === true);
@@ -21,7 +20,6 @@ describe('time-controller', function () {
 	}); 
 
 	it('should execute throttled', function (done) {
-		this.timeout(50);
 		var contextObject = new ContextObject()
 		var throttledTimeController = new TimeController(function(){
 			assert(true, this.test === true);
@@ -36,7 +34,6 @@ describe('time-controller', function () {
 	});
 
 	it('should execute immediate', function (done) {
-		this.timeout(300);
 		var contextObject = new ContextObject()
 		var immediateTimeController = new TimeController(function(){
 			assert(true, this.test === true);
