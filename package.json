@@ -1,0 +1,58 @@
+{
+  "name": "time-controller",
+  "version": "0.0.0",
+  "description": "Controll timers in JavaScript",
+  "homepage": "https://github.com/s-a/time-controller",
+  "author": {
+    "name": "s-a",
+    "email": "stephan.ahlf@gmail.com",
+    "url": "https://github.com/s-a"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "timer",
+    "timers",
+    "settimeout",
+    "interval",
+    "throttle",
+    "immediate",
+    "debounce"
+  ],
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.14.0",
+    "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "should": "^11.1.1"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "https://github.com/s-a/time-controller",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp",
+    "docs:client": "jsdox lib/index.js && cp ./output/index.md ./API.md",
+    "docs": "npm run docs:client",
+    "make": "npm run docs && node node_modules/uglify-js/bin/uglifyjs lib/index.js > time-controller.min.js",
+    "build": "npm run make",
+    "bump": "node node_modules/mocha/bin/_mocha && npm version patch && git push && git push --tags && npm publish"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "uglifyjs": "^2.4.10"
+  }
+}
