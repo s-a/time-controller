@@ -47,7 +47,7 @@
     "test": "gulp",
     "docs:client": "jsdox lib/index.js && cp ./output/index.md ./API.md",
     "docs": "npm run docs:client",
-    "make": "npm run docs && node node_modules/uglify-js/bin/uglifyjs lib/index.js > lib/time-controller.min.js",
+    "make": "npm run docs && node node_modules/uglifyjs/bin/uglifyjs lib/index.js > lib/time-controller.min.js",
     "build": "npm run make",
     "bump": "node node_modules/mocha/bin/_mocha && npm version patch && git push && git push --tags && npm publish"
   },
