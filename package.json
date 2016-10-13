@@ -1,6 +1,6 @@
 {
   "name": "time-controller",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Controll timers in JavaScript",
   "homepage": "https://github.com/s-a/time-controller",
   "author": {
