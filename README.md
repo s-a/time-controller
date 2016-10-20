@@ -1,5 +1,5 @@
 # time-controller [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Control timers in JavaScript in Node and in browser 
+> Control timers in JavaScript in Node and in browser
 
 ## Installation
 
@@ -10,6 +10,9 @@ $ npm install --save time-controller
 ## Usage
 
 Currently no docs available :o( - Please see [unit tests](test/index.js) of this repo or [https://s-a.github.io/time-controller](https://s-a.github.io/time-controller) to inspect the things in your browser.
+
+## Credits
+Inspired from [Timing Controls](https://zhirzh.github.io/2016/10/11/timing-controls/), by [Shirsh Zibbu](https://github.com/zhirzh/).
 
 ## License
 
